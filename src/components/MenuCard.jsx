@@ -23,7 +23,7 @@ const MenuCard = ({ menu, onLocalUpdate }) => {
     if (!form.name || !form.category || !form.price) {
       setError("⚠️ Semua kolom wajib diisi!");
       return;
-    }e
+    }
 
     setError("");
     setLoading(true);
@@ -45,6 +45,7 @@ const MenuCard = ({ menu, onLocalUpdate }) => {
 
   return (
       <div className="bg-white rounded-xl shadow-sm hover:shadow-md transition-all p-4 border border-gray-100 relative">
+
       {!isEditing && (
         <button
           onClick={() => setIsEditing(true)}
